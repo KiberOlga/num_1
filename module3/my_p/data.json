@@ -1,0 +1,42 @@
+{
+    "count": 1,
+    "unread_count": 1,
+    "items": [
+        {
+            "conversation": {
+                "peer": {
+                    "id": 630846608,
+                    "type": "user",
+                    "local_id": 630846608
+                },
+                "last_message_id": 84,
+                "in_read": 83,
+                "out_read": 84,
+                "last_conversation_message_id": 64,
+                "in_read_cmid": 63,
+                "out_read_cmid": 64,
+                "unread_count": 1,
+                "is_marked_unread": false,
+                "important": false,
+                "unanswered": true,
+                "can_write": {
+                    "allowed": true
+                }
+            },
+            "last_message": {
+                "date": 1680800751,
+                "from_id": 630846608,
+                "id": 84,
+                "out": 0,
+                "attachments": [],
+                "conversation_message_id": 64,
+                "fwd_messages": [],
+                "important": false,
+                "is_hidden": false,
+                "peer_id": 630846608,
+                "random_id": 0,
+                "text": "gh"
+            }
+        }
+    ]
+}

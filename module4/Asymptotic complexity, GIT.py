@@ -1,3 +1,4 @@
+# -*- coding: cp1251 -*-
 """def strcounter(data):
     for sym in set(data):
         count = 0

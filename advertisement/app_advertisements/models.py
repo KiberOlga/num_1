@@ -5,6 +5,7 @@ from django.utils.html import format_html
 from django.utils import timezone
 from django.contrib.auth import get_user_model
 
+
 User = get_user_model()
 class Advertisement(models.Model):
     title = models.CharField("Заголовок", max_length=128)
@@ -35,12 +36,24 @@ class Advertisement(models.Model):
             )
         return self.updated_at.strftime("%d.%m.%Y")
 
+    @admin.display(description='фото')
+    def get_html_image(self):
+        if self.image:
+            return format_html(
+                '<img src="{url}" style="max-width: 80; max-height: 80px;">', url=self.image.url
+            )
+
+
+
+
+    def __str__(self):
+        return f"Advertisement(id={self.id}, title={self.title}, price={self.price})"
+
     class Meta:
         db_table = 'advertisements'
 
-    def __str__(self):
-        obj = 'Advertisement(id={0.id}, title={0.title}, price={0.price})'
-        return obj.format(self)
+
+
 
 
 
